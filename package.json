@@ -4,6 +4,11 @@
   "main": "index.js",
   "author": "Szymon",
   "license": "MIT",
+  "scripts": {
+    "start:dev": "ts-node -r tsconfig-paths/register ./src/index.ts",
+    "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "build": "tsc"
+  },
   "devDependencies": {
     "@types/node": "^16.11.7",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
