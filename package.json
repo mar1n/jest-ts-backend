@@ -5,7 +5,7 @@
   "author": "Szymon",
   "license": "MIT",
   "scripts": {
-    "start:dev": "ts-node -r tsconfig-paths/register ./src/index.ts",
+    "start:dev": "nodemon",
     "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
     "build": "tsc"
   },
@@ -19,6 +19,7 @@
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
     "prettier": "^2.4.1",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.11.0",
